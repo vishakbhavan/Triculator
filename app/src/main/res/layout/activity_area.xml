@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#72badd"
+    android:orientation="vertical"
+    tools:context=".Area">
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="TRIANGLE AREA"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="BASE LENGTH"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/edt_baselength"
+            android:inputType="number"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="ALTITUDE LENGTH"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:inputType="number"
+            android:id="@+id/edt_basealtitude"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="AREA "/>
+        <EditText
+            android:layout_width="match_parent"
+            android:enabled="false"
+            android:inputType="number"
+            android:textColor="#000"
+            android:layout_marginLeft="100dp"
+            android:id="@+id/edt_basearea"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:textStyle="bold"
+            android:id="@+id/btn_calc_area"
+            android:text="AREA "/>
+        <Button
+            android:layout_width="wrap_content"
+            android:text="CLEAR"
+            android:textStyle="bold"
+            android:id="@+id/btn_clear_area"
+            android:layout_marginLeft="50dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

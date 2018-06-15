@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Home"
+    android:background="#72badd"
+    android:orientation="vertical"
+    tools:showIn="@layout/app_bar_home">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:text="ABOUT US"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:textColor="#f00"
+        android:text="TRICULATOR is an application made exclusively for students. This
+    application is very useful since one can come to know the SIDES , ANGLES and the AREA of RIGHT-ANGLED TRIANGLES.
+    This is an application made for students and made by students.
+    \nCREATORS;\n       HAYFA F
+              \n       TAIMA BIBY"
+        />
+</LinearLayout>
