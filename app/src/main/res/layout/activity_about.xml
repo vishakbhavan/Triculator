@@ -4,39 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".Home"
-    android:background="@color/colorPrimaryDark1"
     android:orientation="vertical"
-    tools:showIn="@layout/app_bar_home">
-
+    android:background="@drawable/about"
+    tools:context=".About">
     <!--<TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:textSize="30dp"
-        android:textColor="@color/font_colour"
-        android:text="ABOUT US"/>-->
-  <!--  <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:id="@+id/content_about1"
         android:textSize="20dp"
-        android:textColor="#f00"
-
-        />-->
-    <!--<com.codesgood.views.JustifiedTextView
+        android:textStyle="bold"
+        android:textColor="@color/font_colour"
+        android:text="ABOUT US"/>
+    <com.codesgood.views.JustifiedTextView
         android:layout_width="match_parent"
         android:id="@+id/content_about"
-        android:padding="5dp"
+        android:padding="10dp"
         android:gravity="center"
         android:textColor="@color/font_colour"
         android:textSize="18sp"
         android:layout_height="wrap_content"/>-->
-
-<ImageView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/home"/>
 </LinearLayout>

@@ -3,109 +3,134 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:background="#72badd"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
     tools:context=".Side">
 
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:gravity="center"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:layout_height="wrap_content"
-        android:text="CALCULATE SIDE"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:gravity="center"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:layout_marginTop="20dp"
-        android:layout_height="wrap_content"
-        android:text="ENTER ANY TWO VALUES"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="25dp"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="ALTITUDE LENGTH"/>
-        <EditText
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_marginLeft="50dp"
-            android:id="@+id/edt_altitude_side"
-            android:inputType="number"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="25dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="BASE LENGTH"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_marginLeft="85dp"
-            android:inputType="number"
-            android:id="@+id/edt_base_side"
-            android:layout_height="wrap_content" />
+            android:orientation="vertical">
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="25dp"
-
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="HYPOTENUSE LENGTH"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:inputType="number"
-            android:layout_marginLeft="30dp"
-            android:id="@+id/edt_hypotenuse_side"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="CALCULATE SIDE"
+                android:textColor="@color/font_colour"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="ENTER ANY TWO VALUES"
+                android:textColor="@color/font_colour"
+                android:textSize="20dp"
+                android:textStyle="bold" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:textStyle="bold"
-            android:id="@+id/btn_calc_side"
-            android:text="SIDE "/>
-        <Button
-            android:layout_width="wrap_content"
-            android:text="CLEAR"
-            android:textStyle="bold"
-            android:id="@+id/btn_clear_side"
-            android:layout_marginLeft="60dp"
-            android:layout_height="wrap_content" />
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:orientation="horizontal">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ALTITUDE LENGTH"
+                    android:textColor="@color/font_colour"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_altitude_side"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BASE LENGTH"
+                    android:textColor="@color/font_colour"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_base_side"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="85dp"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HYPOTENUSE LENGTH"
+                    android:textColor="@color/font_colour"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_hypotenuse_side"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_calc_side"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="SIDE "
+                    android:background="@drawable/cust_btn"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_clear_side"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:text="CLEAR"
+                    android:background="@drawable/cust_btn"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

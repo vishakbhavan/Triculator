@@ -3,8 +3,15 @@
     <string name="title_activity_home">Home</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_title">TRICULATOR</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="html_content">
+<![CDATA[
+<p style="text-align:justify">>TRICULATOR is an application made exclusively for students. This
+    application is very useful since one can come to know the SIDES , ANGLES and the AREA of RIGHT-ANGLED TRIANGLES.
+    This is an application made for students</p>
+]]>
+</string>
 </resources>

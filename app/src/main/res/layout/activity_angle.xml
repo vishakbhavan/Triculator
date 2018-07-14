@@ -4,170 +4,208 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     android:orientation="vertical"
-    android:background="#72badd"
     tools:context=".Angle">
 
     <TextView
         android:layout_width="match_parent"
-        android:gravity="center"
-        android:textSize="30dp"
-        android:textStyle="bold"
         android:layout_height="wrap_content"
-        android:text="CALCULATE ANGLE"/>
+        android:gravity="center"
+        android:text="CALCULATE ANGLE"
+        android:textSize="20dp"
+        android:textColor="@color/font_colour"
+        android:textStyle="bold" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-   <LinearLayout
-       android:layout_width="match_parent"
-       android:orientation="vertical"
-       android:layout_height="wrap_content">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="25dp"
-        android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="ALTITUDE LENGTH"/>
-        <EditText
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_marginLeft="50dp"
-            android:id="@+id/edt_altitude_angle"
-            android:inputType="number"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="25dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="BASE LENGTH"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_marginLeft="85dp"
-            android:inputType="number"
-            android:id="@+id/edt_base_angle"
-            android:layout_height="wrap_content" />
+            android:orientation="vertical">
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:orientation="horizontal">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="25dp"
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ALTITUDE LENGTH"
+                    android:textColor="@color/font_colour"
+                    android:textStyle="bold" />
 
-        android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/edt_altitude_angle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:inputType="numberDecimal" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:text="HYPOTENUSE LENGTH"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:inputType="number"
-            android:layout_marginLeft="30dp"
-            android:id="@+id/edt_hypotenuse_angle"
-            android:layout_height="wrap_content" />
+            </LinearLayout>
 
-    </LinearLayout>
-       <LinearLayout
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_margin="25dp"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:orientation="horizontal">
 
-           android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BASE LENGTH"
+                    android:textColor="@color/font_colour"
+                    android:textStyle="bold" />
 
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:textStyle="bold"
-               android:text="Angle A"/>
-           <EditText
-               android:layout_width="match_parent"
-               android:inputType="number"
-               android:layout_marginLeft="130dp"
-               android:id="@+id/res_angle_a"
-               android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/edt_base_angle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="85dp"
+                    android:inputType="numberDecimal" />
 
-       </LinearLayout>
-       <LinearLayout
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_margin="25dp"
+            </LinearLayout>
 
-           android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#a57909"
+                android:tooltipText="OUTPUT"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
 
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:textStyle="bold"
-               android:text="Angle B"/>
-           <EditText
-               android:layout_width="match_parent"
-               android:inputType="number"
-               android:layout_marginLeft="130dp"
-               android:id="@+id/res_angle_b"
-               android:text="90"
-               android:enabled="false"
-               android:layout_height="wrap_content" />
-
-       </LinearLayout>
-       <LinearLayout
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_margin="25dp"
-
-           android:orientation="horizontal">
-
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:textStyle="bold"
-               android:text="Angle C"/>
-           <EditText
-               android:layout_width="match_parent"
-               android:inputType="number"
-               android:layout_marginLeft="130dp"
-               android:id="@+id/res_angle_c"
-               android:layout_height="wrap_content" />
-
-       </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp"
+                    android:orientation="horizontal">
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HYPOTENUSE LENGTH"
+                        android:textColor="@color/font_colour"
+                        android:textStyle="bold" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:textStyle="bold"
-            android:id="@+id/btn_calc_angle"
-            android:text="ANGLE "/>
-        <Button
-            android:layout_width="wrap_content"
-            android:text="CLEAR"
-            android:textStyle="bold"
-            android:id="@+id/btn_clear_angle"
-            android:layout_marginLeft="60dp"
-            android:layout_height="wrap_content" />
+                    <EditText
+                        android:id="@+id/edt_hypotenuse_angle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:enabled="false"
+                        android:textColor="@color/font_colour2"
+                        android:inputType="number" />
 
-    </LinearLayout>
-   </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Angle A"
+                        android:textColor="@color/font_colour"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/res_angle_a"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="130dp"
+                        android:enabled="false"
+                        android:textColor="@color/font_colour2"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Angle B"
+                        android:textColor="@color/font_colour"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/res_angle_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="130dp"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:textColor="@color/font_colour2"
+                        android:text="90" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Angle C"
+                        android:textColor="@color/font_colour"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/res_angle_c"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="130dp"
+                        android:enabled="false"
+                        android:textColor="@color/font_colour2"
+                        android:inputType="number" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_calc_angle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:text="ANGLE "
+                    android:background="@drawable/cust_btn"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_clear_angle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:text="CLEAR"
+                    android:background="@drawable/cust_btn"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
     </ScrollView>
 </LinearLayout>

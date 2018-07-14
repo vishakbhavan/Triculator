@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.ActionBar;
+import android.text.Html;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,9 +15,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+import com.codesgood.views.JustifiedTextView;
 
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +30,17 @@ public class Home extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        /*TextView foo = (TextView)findViewById(R.id.content_about1);
+        foo.setText(Html.fromHtml(getString(R.string.html_content)));*/
+
+       /* final JustifiedTextView txt=(JustifiedTextView) findViewById(R.id.content_about);
+
+        txt.setText("TRICULATOR is an application made exclusively for students to get the idea about Right-angled trianagle.This "+
+                "application is very useful because one can come to know the SIDES,ANGLES and the AREA of RIGHT-ANGLED TRIANGLES."+
+                "This is an application made for students, and is developed by the Android Team."+"\n"+"A right triangle or " +
+                "right-angled triangle is a triangle in which one angle is a right angle (that is, a 90-degree angle). " +
+                "The relation between the sides and angles of a right triangle is the basis for trigonometry.");
+*/
         /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,9 +104,9 @@ public class Home extends AppCompatActivity
             startActivity(new Intent(getApplicationContext(),Side.class));
         } else if (id == R.id.nav_slideshow) {
             startActivity(new Intent(getApplicationContext(),Angle.class));
-        } /*else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_manage) {
+            startActivity(new Intent(getApplicationContext(),About.class));
+        } /*else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
 
